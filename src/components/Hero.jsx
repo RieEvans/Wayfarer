@@ -107,7 +107,7 @@ const Hero = ({ url }) => {
 
         {/* TOURIST SPOT MANILA SECTION STARTS*/}
 
-        <div className={`bg-[url("dotsbg4.svg")] bg-no-repeat`}>
+        <div className={`bg-[url("/dotsbg4.svg")] bg-no-repeat`}>
           <div className={` mt-20 m-auto xl:w-[90%] `}>
             <h1 className="sm:text-center md:text-end mb-5 font-bold text-slate-900 md:text-4xl sm:text-2xl">
               Things to do around Intramuros
@@ -135,7 +135,7 @@ const Hero = ({ url }) => {
               </Slider>
 
               <div
-                className={` bg-[url("wave-5.svg")] object-cover xl:w-[w-70%] xxl:w-[55%] p-10  sm:mt-16 md:mt-10 xl:mt-0  rounded-lg sm:w-[100%] overflow-hidden relative`}
+                className={` bg-[url("/wave-5.svg")] object-cover xl:w-[w-70%] xxl:w-[55%] p-10  sm:mt-16 md:mt-10 xl:mt-0  rounded-lg sm:w-[100%] overflow-hidden relative`}
               >
                 <h1 className="font-bold text-4xl text-start text-emerald-400 ">
                   Intramuros
