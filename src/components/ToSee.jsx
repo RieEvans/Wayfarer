@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import { ToSeeData, EventIcons, VisitCities } from "./MenuItems";
 import { Ads } from "./Ads";
-import { Choices } from "./choices";
+import { ChoiceAds } from "./ChoicesAds";
 import Prepare from "./Prepare";
 import Slider from "react-slick";
 import Footer from "./HomeFooter";
@@ -174,7 +174,7 @@ export const ToSee = () => {
           {/* CITY IMAGES SECTION ENDS  */}
           <div className="md:flex md:flex-col-reverse gap-2 xl:flex-row">
             <Ads />
-            <Choices />
+            <ChoiceAds />
           </div>
 
           <div>
