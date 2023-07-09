@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 
-
 function Navbar() {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
@@ -36,7 +35,7 @@ function Navbar() {
       <ul
         className={` ${
           open ? "top-[84px] left-0 " : "top-[-1460px] left-0"
-        } z-0 md:items-center md:h-20 absolute md:hidden sm:bg-slate-800 h-screen justify-end sm:pr-12 p-5 w-full z-50 gap-5  transition-all duration-500 ease-in-out`}
+        } z-0 md:items-center md:h-20 absolute md:hidden sm:bg-slate-800 justify-end sm:pr-12 p-5 w-full z-50 gap-5  transition-all duration-500 ease-in-out`}
       >
         <div className=" text-end">
           <h1>
@@ -51,19 +50,13 @@ function Navbar() {
               key={index}
               className="md:flex sm:text-white md:text-black gap-2 cursor-pointer w-full p-3 hover:bg-emerald-400 duration-200 rounded-lg"
             >
-              <a className="flex gap-2" href={item.url}>
+              <Link className="flex gap-2" to={item.url}>
                 <i className={item.icon}></i>
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
-        <button
-          
-          className="bg-emerald-400 px-4 py rounded-md text-slate-900 font-bold mt-5"
-        >
-          Logout
-        </button>
       </ul>
 
       <ul className=" md:flex md:bg-white sm:my-5 md:items-center sm:hidden md:block  md:h-20 w-full justify-center">

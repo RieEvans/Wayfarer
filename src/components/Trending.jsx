@@ -10,7 +10,7 @@ export const TrendingDest = () => {
       <p className="text-slate-900 opacity-75 mt-2">
         Most Popular choices for travellers from the Philippines
       </p>
-      <section className="relative shadow-xl mt-5 grid content-center justify-content-center sm-grid-cols-1  xl:grid-cols-3 xxl:grid-cols-4 mmd:grid-cols-2 mmd:grid-flow-row-dense gap-3 [&>*:nth-child(odd)]:col-span-2 [&>*:nth-child(5)]:col-span-1 cursor-pointer overflow-hidden ">
+      <section className="relative shadow-xl mt-5 sm:flex sm:flex-col gap-1  mmd:grid content-center justify-content-center mmd:grid-cols-1 xl:grid-cols-3 xxl:grid-cols-4  gap-3 [&>*:nth-child(even)]:col-span-2 cursor-pointer overflow-hidden ">
         {trends.map((trending, index) => {
           return (
             <div className="h-full w-full overflow-hidden relative " key={index}>
