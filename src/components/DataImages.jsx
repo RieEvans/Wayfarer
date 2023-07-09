@@ -36,7 +36,7 @@ export const Experiences = [
     title:'Rediscover Boracay',
     text:'Experience your world of joy along the white sand beach of Boracay',
     button:'See Activites',
-    url:'/service'
+    url:'/WhereToStay'
   },
   {
     id:2,
@@ -44,7 +44,7 @@ export const Experiences = [
     title:'STAY+ In your World of Joy',
     text:'More than your average hotel experience',
     button:'See Activites',
-    url:'/service'
+    url:'/WhereToStay'
   },
   {
     id:3,
@@ -52,7 +52,7 @@ export const Experiences = [
     title:'Awesome Hotel and Restaurant Dining Vouchers',
     text:'Grab these exclusive deals while they are hot',
     button:'See Activites',
-    url:'/service'
+    url:'/WhereToStay'
   },
 
 ]

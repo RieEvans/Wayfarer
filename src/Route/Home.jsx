@@ -54,7 +54,7 @@ export const Home = () => {
         slidesToScroll: 1,
       };
     
-      const [loading, setLoading] = useState(false)
+      const [loading, setLoading] = useState(true)
     
       useEffect(() => {
         setTimeout(() => {
