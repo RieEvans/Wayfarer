@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Route/Home";
-import { About } from "./Route/About";
-import { Service } from "./Route/Service";
+import { WhatToSee } from "./Route/WhatToSee";
+import { WhereToStay } from "./Route/WhereToStay";
 import TodoList from "./Intramuros/TodoList";
 import Navbar from "./components/Navbar";
 
@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="todolist" element={<TodoList />} />
-        <Route path="about" element={<About />} />
-        <Route path="service" element={<Service />}></Route>
+        <Route path="/WhatToSee" element={<WhatToSee />} />
+        <Route path="/WhereToStay" element={<WhereToStay />}></Route>
       </Routes>
     </div>
   );

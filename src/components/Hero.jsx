@@ -8,7 +8,7 @@ import { Intramuros, IntramurosDetails } from "../Intramuros/Intramuros";
 import { Experiences } from "./DataImages";
 import { Loading } from "../Route/Loading";
 import Footer from "./HomeFooter";
-import Prepare from "./Prepare";
+import { PrepareAds } from "./PrepAds";
 import { Discount } from "./Discount";
 import { TrendingDest } from "./Trending";
 
@@ -170,7 +170,7 @@ const Hero = ({ url }) => {
             {/* TOURIST SPOT MANILA SECTION ENDS */}
 
             <div className={``}>
-              <Prepare />
+              <PrepareAds />
             </div>
 
             {/* EXPERIENCES SECTIONS*/}

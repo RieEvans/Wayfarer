@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../components/Navbar";
-import { ToSeeData } from "../components/MenuItems";
-import { HotelsData, HotelsItem } from "../HotelsComponent/HotelsData";
+import React, {useState } from "react";
+import { HotelsData } from "../HotelsComponent/HotelsData";
 import { Items } from "../HotelsComponent/Items";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file 
@@ -9,12 +7,8 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 
 
-export const Service = () => {
+export const WhereToStay = () => {
   const [searchItem, setSearchItem] = useState([]); {/* the state variable "searchItem declared props pass to children" */}
- 
-
-
-  
   const [openSearch, setOpenSearch] = useState(false);
   const [openDate, setOpenDate] = useState(false);
   const [dates, setDates] = useState([

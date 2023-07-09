@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import { ToSeeData, EventIcons, VisitCities } from "./MenuItems";
-import { Ads } from "./Ads";
-import { ChoiceAds } from "./ChoicesAds";
-import Prepare from "./Prepare";
+import { ToSeeData } from '../components/MenuItems';
+import { EventIcons } from '../components/MenuItems';
+import { VisitCities } from '../components/MenuItems';
+import { Ads } from '../components/Ads';
+import { ChoiceAds } from '../components/ChoicesAds';
+import { PrepareAds } from '../components/PrepAds';
+import { Discount } from '../components/Discount';
+import Footer from '../components/HomeFooter';
 import Slider from "react-slick";
-import Footer from "./HomeFooter";
-import Modal from "./Modal";
-import { Discount } from "./Discount";
+import Modal from '../components/Modal';
 
-export const ToSee = () => {
+
+export const WhatToSee = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -69,11 +72,9 @@ export const ToSee = () => {
     setTempData(() => [1, ...tempData]);
     return setModal(true);
   };
-
   return (
     <>
-     
-      <section>
+     <section>
         {/* Reusable Component*/}
         <div className="">
           {ToSeeData.map((data) => {
@@ -172,19 +173,19 @@ export const ToSee = () => {
 
           {/* CITY IMAGES SECTION ENDS  */}
           <div className="md:flex md:flex-col-reverse gap-2 xl:flex-row">
-            <Ads />
-            <ChoiceAds />
+              <Ads />
+              <ChoiceAds />
           </div>
 
           <div>
-            <Prepare />
+              <PrepareAds />
           </div>
           <div className="mt-5">
-            <Discount />
+              <Discount />
           </div>
         </main>
-        <Footer />
+              <Footer />
       </section>
     </>
-  );
-};
+  )
+}

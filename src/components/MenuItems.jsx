@@ -8,14 +8,14 @@ export const MenuItems = [
 
   {
     title: "What to see ?",
-    url: "/about",
+    url: "/WhatToSee",
     cName: "nav-links",
     icon: "fa-solid fa-circle-info",
   },
 
   {
     title: "Where to stay",
-    url: "/service",
+    url: "/WhereToStay",
     cName: "nav-links",
     icon: "fa-solid fa-briefcase",
   },

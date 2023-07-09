@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Prepare = () => {
+export const PrepareAds = () => {
   return (
     <div className={`bg-[url("dotsbg4.svg")] bg-no-repeat bg-right shadow-xl  mt-10 flex items-center justify-center bg-emerald-300 rounded-[2rem]`}>
         <div className='p-10 flex flex-col items-center'>
@@ -18,5 +18,3 @@ const Prepare = () => {
     </div>
   )
 }
-
-export default Prepare

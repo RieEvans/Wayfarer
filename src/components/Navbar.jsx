@@ -40,7 +40,7 @@ function Navbar() {
       >
         <div className=" text-end">
           <h1>
-            <span className="bg-white font-bold p-2 rounded-xl">
+            <span className="font-bold p-2 rounded-xl">
               {userName}
             </span>
           </h1>
